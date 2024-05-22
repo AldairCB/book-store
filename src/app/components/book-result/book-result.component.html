@@ -1,0 +1,8 @@
+<ng-template #successTpl> Item added to cart </ng-template>
+<div class="book-result">
+    <div>
+        <h4>{{book.name}}</h4>
+        <h5 style="font-size: larger;">S/. {{book.price}}</h5>
+    </div>
+    <button class="btn btn-outline-primary" (click)="addToCart(book, successTpl)">Add to cart</button>
+</div>
